@@ -1,52 +1,25 @@
-<section id="team" class="section bg-gray-100">
-  <div class="container">
-      <div class="row section-heading justify-content-center text-center wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: fadeInUp;">
-          <div class="col-lg-8 col-xl-6">
-              <h3 class="h1 bg-primary-after after-50px pb-3 mb-3">Our Advisors</h3>
-              <div class="lead">Mombo is a HTML5 template based on Sass and Bootstrap 5 with modern and creative multipurpose design you can use it as a startups.</div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-lg-3 col-sm-6 my-3 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: fadeInUp;">
-              <div class="hover-top-in text-center">
-                  <div class="overflow-hidden z-index-1 position-relative px-5"><img class="rounded-circle border border-5 border-white shadow" src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt=""></div>
-                  <div class="mx-2 mx-xl-3 shadow rounded-3 position-relative mt-n4 bg-white p-4 pt-6 mx-4 text-center hover-top--in">
-                      <h6 class="fw-700 dark-color mb-1">Nancy Bayers</h6><small>Co-Founder</small>
-                      <div class="pt-2"><a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-facebook"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-twitter"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white"
-                              href="#"><i class="bi bi-linkedin"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-instagram"></i></a></div>
+<div class="container">
+  <div class="row">
+      <div *ngFor="let employee of employees" class="col-md-6 col-xl-3">
+          <div class="card m-b-30">
+              <div class="card-body row">
+                  <div class="col-6">
+                      <a href=""><img src="{{employee?.imageUrl}}" alt="" class="img-fluid rounded-circle w-60"></a>
+                  </div>
+                  <div class="col-6 card-title align-self-center mb-0">
+                      <h5>{{employee?.name}}</h5>
+                      <p class="m-0">{{employee?.jobTitle}}</p>
                   </div>
               </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 my-3 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: fadeInUp;">
-              <div class="hover-top-in text-center">
-                  <div class="overflow-hidden z-index-1 position-relative px-5"><img class="rounded-circle border border-5 border-white shadow" src="https://bootdey.com/img/Content/avatar/avatar2.png" title="" alt=""></div>
-                  <div class="mx-2 mx-xl-3 shadow rounded-3 position-relative mt-n4 bg-white p-4 pt-6 mx-4 text-center hover-top--in">
-                      <h6 class="fw-700 dark-color mb-1">Nancy Bayers</h6><small>Co-Founder</small>
-                      <div class="pt-2"><a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-facebook"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-twitter"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white"
-                              href="#"><i class="bi bi-linkedin"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-instagram"></i></a></div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 my-3 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: fadeInUp;">
-              <div class="hover-top-in text-center">
-                  <div class="overflow-hidden z-index-1 position-relative px-5"><img class="rounded-circle border border-5 border-white shadow" src="https://bootdey.com/img/Content/avatar/avatar3.png" title="" alt=""></div>
-                  <div class="mx-2 mx-xl-3 shadow rounded-3 position-relative mt-n4 bg-white p-4 pt-6 mx-4 text-center hover-top--in">
-                      <h6 class="fw-700 dark-color mb-1">Nancy Bayers</h6><small>Co-Founder</small>
-                      <div class="pt-2"><a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-facebook"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-twitter"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white"
-                              href="#"><i class="bi bi-linkedin"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-instagram"></i></a></div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 my-3 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.4s; animation-name: fadeInUp;">
-              <div class="hover-top-in text-center">
-                  <div class="overflow-hidden z-index-1 position-relative px-5"><img class="rounded-circle border border-5 border-white shadow" src="https://bootdey.com/img/Content/avatar/avatar4.png" title="" alt=""></div>
-                  <div class="mx-2 mx-xl-3 shadow rounded-3 position-relative mt-n4 bg-white p-4 pt-6 mx-4 text-center hover-top--in">
-                      <h6 class="fw-700 dark-color mb-1">Nancy Bayers</h6><small>Co-Founder</small>
-                      <div class="pt-2"><a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-facebook"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-twitter"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white"
-                              href="#"><i class="bi bi-linkedin"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-instagram"></i></a></div>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Email : <a href="#">{{employee?.email}}</a></li>
+                  <li class="list-group-item"><i class="fa fa-phone float-right"></i>Phone: {{employee?.phone}}</li>
+              </ul>
+              <div class="card-body">
+                  <div class="float-right btn-group btn-group-sm">
+                      <a href="#" class="btn btn-primary tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-pencil"></i> </a>
+                      <a href="#" class="btn btn-secondary tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete"><i class="fa fa-times"></i></a>
                   </div>
               </div>
           </div>
       </div>
-  </div>
-</section>
